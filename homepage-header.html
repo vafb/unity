@@ -1,0 +1,86 @@
+<div class="hero-div">
+    <div class="row">
+        <div class="slogan-div col-lg-6 col-sm-8">
+            <h1>We serve more than farmers.<br>We serve Virginians.</h1>
+            <h4>When you join Virginia Farm Bureau, you help support farming, agriculture and the Virginia way of life.</h4>
+            <div class="row">
+                <div class="col-sm-6 hidden-xs">
+                    <div class="margin-sm">
+                    <!--<h3 class="vfb-color-body-text"><strong>Insurance</strong></h3>-->
+                        <button type="button" class="btn button-lg button-primary" onclick="location.href='/insurance/get-quote'">Get a Quote</button>
+                    </div>
+                </div>
+                <div class="col-sm-6 hidden-xs">
+                    <div class="margin-sm">
+                    <!--<h3 class="vfb-color-body-text"><strong>Membership</strong></h3>-->
+                        <button type="button" class="btn button-lg button-outline-secondary" onclick="location.href='/membership-at-work/membership/join-now'">Join Now</button>
+                    </div>
+                </div>
+                <div class="col-xs-12 visible-xs-block">
+                    <div class="margin-xs">
+                    <!--<p class="text-center"><strong>Insurance</strong></p>-->
+                        <button type="button" class="btn button-lg button-primary center-block" onclick="location.href='/insurance/get-quote'">Get a Quote</button>
+                    </div>
+                </div>
+                <div class="col-xs-12 visible-xs-block">
+                    <div class="margin-xs">
+                    <!--<p class="text-center"><strong>Membership</strong></p>-->
+                        <button type="button" class="btn button-lg button-outline-secondary center-block" onclick="location.href='/membership-at-work/membership/join-now'">Join Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scene-info">
+            <div id="sceneName"></div>
+            <div id="sceneDistance"></div>
+            <div id="sceneOffice"><a id="sceneOfficeLink" href="#"></a></div>
+        </div>
+    </div>
+</div>  
+
+<script>
+    var scene = {
+        name: "not set",
+        distance: "99",
+        officeName: "not set",
+        officeUrl: "#"
+    }
+    switch (true) {
+        case "[[xlFileName]]".startsWith("shenandoah"):
+            scene.name = "Hawk's Bill Mountain";
+            scene.distance = "8.26";
+            scene.officeName = "PAGE COUNTY OFFICE";
+            scene.officeUrl = "/FIND-AN-AGENT/Office-Detail/County_Office_Name/Page%20County%20Office/AutoSearch/True";
+            break;
+        case "[[xlFileName]]".startsWith("richmond"):
+            scene.name = "James River Railway Bridge";
+            scene.distance = "8.83";
+            scene.officeName = "BROAD STREET OFFICE";
+            scene.officeUrl = "/FIND-AN-AGENT/Office-Detail/AutoSearch/True?County_Office_Name=Broad%20St.%20Office"
+            break;
+        case "[[xlFileName]]".startsWith("natural"):
+            scene.name = "Natural Bridge";
+            scene.distance = "15.31";
+            scene.officeName = "LEXINGTON OFFICE";
+            scene.officeUrl = "/FIND-AN-AGENT/Office-Detail/County_Office_Name/Lexington%20Office/AutoSearch/True"
+            break;
+        case "[[xlFileName]]".startsWith("event"):
+            scene.name = "Virginia State Fair";
+            scene.distance = "6.24";
+            scene.officeName = "ASHLAND OFFICE";
+            scene.officeUrl = "/FIND-AN-AGENT/Office-Detail/County_Office_Name/Ashland%20Office/AutoSearch/True"
+            break;
+        case "[[xlFileName]]".startsWith("blue"):
+            scene.name = "Blue Ridge Parkway";
+            scene.distance = "5.44";
+            scene.officeName = "BOUTETOURT OFFICE";
+            scene.officeUrl = "/FIND-AN-AGENT/Office-Detail/County_Office_Name/Botetourt%20County%20Office/AutoSearch/True"
+            break;
+
+    }
+    $("#sceneName").html(scene.name);
+    $("#sceneDistance").html("<i class='fa fa-map-marker' aria-hidden='true'></i>  " + scene.distance + " MILES FROM OUR");
+    $("#sceneOfficeLink").attr('href', scene.officeUrl).html(scene.officeName);
+</script>
