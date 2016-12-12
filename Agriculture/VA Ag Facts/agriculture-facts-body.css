@@ -1,0 +1,15 @@
+td, th {
+    font-size: 21.3px;
+}
+
+.blockquote {
+    padding: 8.5px 17px;
+    margin: 2rem 0;
+    font-size: 23px;
+    border-left: 5px solid #799c4b;
+    line-height: 1.5em;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #fafafa; 
+}
