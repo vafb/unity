@@ -1,0 +1,41 @@
+#TopContent {
+	margin-top: -85px;
+    background-color:#333333;
+}
+
+    .cta-image
+    {
+        position: relative;
+        background-image: url(/Portals/FBA/images/INS/Product_Pages/1400px-vehicle-landing-header.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 400px;
+        width: auto;
+        max-width: 1340px;
+        /*display: flex;*/
+    }
+
+    .vfb-bg-trans-white {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid #ffffff;
+        padding: 15px;
+    }
+
+
+    @media (max-width: 900px)
+    {
+        .cta-image
+        {
+            background-image: url(/Portals/FBA/images/INS/Product_Pages/1400px-vehicle-landing-header.jpg);
+            height: 400px;
+        }
+
+
+    @media (max-width: 400px)
+    {
+        .cta-image
+        {
+            background-image: url(/Portals/FBA/images/INS/Product_Pages/1400px-vehicle-landing-header.jpg);
+            height: 400px;
+        }
+

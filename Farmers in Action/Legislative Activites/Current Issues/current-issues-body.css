@@ -1,0 +1,53 @@
+
+li > h3 {
+	line-height: 1.3em;
+	margin:2px;
+}
+
+hr {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.affix {
+	top: 10px;
+	width: 360px;
+}
+
+.affix-bottom {
+    position: relative
+}
+
+.nav li a,
+.nav li a:visited {
+    background-color: #e4e4e4;
+    color: #333333;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.nav li a:hover,
+.nav li a:active
+ {
+    color: #333333;
+    background-color: #cccccc;
+}
+
+li p {
+	line-height: 1.4em;
+}
+
+
+@media (max-width:1200px) {
+	.affix {
+		max-width: 293px;
+	}
+}
+
+@media (max-width:992px) {
+	.affix {
+		max-width: 157px;
+	}
+	
+}

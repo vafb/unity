@@ -1,0 +1,60 @@
+#TopContent {
+	margin-top: -85px;
+    background-color:#333333;
+}
+
+    .hero-div {
+        position: relative;
+        background-image: url(/Portals/FBA/images/membership-at-work/1400px-membership-header.jpg);
+        background-position: center;
+        margin: 0 auto 0 auto;
+        background-repeat: no-repeat;
+        height: 400px;
+        width: auto;
+        background-size: cover;
+        /*display: flex;*/
+    }
+
+    .claims-row-container {
+    	position: absolute;
+		width: 100%; 
+        top: 50%;
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    .claims-number-container {
+        background-color: rgba(255,255,255, .85);
+        border: solid 1px #fff;
+        padding: 20px; 
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+    }
+
+    .vfb-breadcrumb
+    {
+        display: none;
+    }
+
+
+    @media (max-width: 900px)
+    {
+        .hero-div
+        {
+            background-image: url(Portals/FBA/images/membership-at-work/900px-membership-header.jpg);
+            height: 400px;
+        }
+
+
+    @media (max-width: 400px)
+    {
+        .hero-div
+        {
+            background-image: url(Portals/FBA/images/membership-at-work/400px-membership-header.jpg);
+            height: 400px;
+        }
+
